@@ -1,0 +1,15 @@
+/* header style start  */
+    /* Show dropdown menu on hover for larger screens */
+    @media (min-width: 992px) {
+
+        /* lg and up */
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .navbar-nav .nav-item.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+    }
+/* header style end  */
