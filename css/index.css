@@ -1,0 +1,355 @@
+/* header css start  */
+/* Show dropdown menu on hover for larger screens */
+@media (min-width: 992px) {
+  /* lg and up */
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+  }
+}
+/* header css  end  */
+
+/* Banner css start */
+/* Slider 1 start */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider-1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.row.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-12,
+.col-lg-6,
+.col-md-6 {
+  padding: 0;
+}
+
+.left-column,
+.right-column {
+  padding: 0;
+  margin: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.right-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive font sizes */
+@media only screen and (max-width: 768px) {
+  .responsives-text {
+    font-size: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .responsives-text {
+    font-size: 20px !important;
+  }
+}
+
+/* Slider 1  end*/
+
+/* Slider 2 start */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider-2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-12,
+.col-lg-6,
+.col-md-6 {
+    padding: 0;
+}
+
+.left-column,
+.right-column {
+    padding: 0;
+    margin: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.responsive-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-regular {
+    font-family: 'Poppins', sans-serif;
+}
+/* Slider 2 end */
+/* Slider 3 Start */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider-3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row.mx-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-12,
+.col-lg-6,
+.col-md-6 {
+    padding: 0;
+}
+
+.left-column,
+.right-column {
+    padding: 0;
+    margin: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-regular {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive font sizes */
+@media only screen and (max-width: 768px) {
+    .responsives-text {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .responsives-text {
+        font-size: 20px !important;
+    }
+}
+/* Slider 3 end */
+/* Slider 4 start */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider-4 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row.mx-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-12,
+.col-lg-6,
+.col-md-6 {
+    padding: 0;
+}
+
+.left-column,
+.right-column {
+    padding: 0;
+    margin: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.poppins-regular {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive font sizes */
+@media only screen and (max-width: 768px) {
+    .responsives-text {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .responsives-text {
+        font-size: 20px !important;
+    }
+}
+/* Slider 4 start */
+ /* Slider 5 start */
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+ }
+
+ .slider-5 {
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .row.mx-0 {
+     margin-right: 0;
+     margin-left: 0;
+ }
+
+ .col-12,
+ .col-lg-6,
+ .col-md-6 {
+     padding: 0;
+ }
+
+ .left-column,
+ .right-column {
+     padding: 0;
+     margin: 0;
+ }
+
+ .img-fluid {
+     width: 100%;
+     height: auto;
+ }
+
+ .right-column img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ .responsive-text {
+     font-family: 'Poppins', sans-serif;
+     text-transform: uppercase;
+ }
+
+ .poppins-regular {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* Responsive font sizes */
+ @media only screen and (max-width: 768px) {
+     .responsives-text {
+         font-size: 25px !important;
+     }
+ }
+
+ @media only screen and (max-width: 480px) {
+     .responsives-text {
+         font-size: 20px !important;
+     }
+ }
+ /* Slider 5 end */
+/* Banner css end */
+
+/* Customer says box css start */
+.container {
+    width: 60%;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.box {
+    background-image: linear-gradient(to right top, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.fw-bolder {
+    color: white;
+}
+
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Tablet styles (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+/* Customer says box css end */
+.arjun{
+    text-align: end !important;
+}
