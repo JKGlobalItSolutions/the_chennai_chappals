@@ -1041,20 +1041,10 @@
     
             function sendMessage() {
                 var phonenumber = "+8438438413"; // Your WhatsApp phone number
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var phone = document.getElementById("phone").value;
                 var message = document.getElementById("message").value;
-                var service = document.getElementById("service").value;
-                var location = document.getElementById("location").value;
     
                 var url = "https://wa.me/" + phonenumber + "?text=" +
-                    "Name: " + name + "%0a" +
-                    "Email: " + email + "%0a" +
-                    "Phone: " + phone + "%0a" +
                     "Message: " + message + "%0a" +
-                    "Service: " + service + "%0a" +
-                    "Location: " + location + "%0a" +
                     "This message is sent via the contact form on our website.";
     
                 window.open(url, '_blank').focus();
