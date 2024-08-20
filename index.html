@@ -26,24 +26,9 @@
 
 <body>
     <header>
-        <style>
-            /* Show dropdown menu on hover for larger screens */
-            @media (min-width: 992px) {
-
-                /* lg and up */
-                .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-                    display: block;
-                }
-
-                .navbar-nav .nav-item.dropdown .dropdown-menu {
-                    display: none;
-                    position: absolute;
-                }
-            }
-        </style>
-        <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light  w-100 mb-3 mb-lg-0">
+        <nav style="background-color: white;" class="navbar navbar-expand-lg navbar-light w-100 mb-3 mb-lg-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="ms-4" style="height: 35px;" src="./images/The CHennai Chappals.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -53,22 +38,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav w-100 d-flex justify-content-around">
                         <li class="nav-item">
-                            <a style="font-weight: 700;color: black;" class="nav-link" href="#">Home</a>
+                            <a style="font-weight: 700;color: black;" class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a style="font-weight: 700;color: black;" class="nav-link" href="About us.html">About</a>
                         </li>
-                       
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <b class="fw-bold text-dark">Products</b>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="product.html" data-category="men">Men</a></li>
                                 <li><a class="dropdown-item" href="product.html" data-category="women">Women</a></li>
                                 <li><a class="dropdown-item" href="product.html" data-category="kids">Kids</a></li>
-                                <li><a class="dropdown-item" href="product.html" data-category="accessories">Accessories</a></li>
+                                <li><a class="dropdown-item" href="product.html" data-category="Bags">Bags</a></li>
+                                <li><a class="dropdown-item" href="product.html" data-category="Sunglass">Sunglass</a></li>
+                                <li><a class="dropdown-item" href="product.html" data-category="Accessories">Accessories</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -821,14 +806,13 @@
 
         <!-- banner -->
         <div class="container my-4 p-lg-5 p-3">
-            <div class="row align-items-center">
-                <div class="col"></div>
-                <div class="col-12 col-lg-3">
+            <div class="row align-items-center" style="gap: 0px;">
+                <div class="col-12 col-md-6 col-lg-3">
                     <a href="index.html">
-                        <img class="img-fluid" src="./images/blue shoe.png" alt="">
+                        <img class="img-fluid d-none d-md-block d-lg-block" src="./images/blue shoe.png" alt="">
                     </a>
                 </div>
-                <div class="col-12 col-lg-7 p-3 ms-lg-5">
+                <div class="col-12 col-lg-7 col-md-6 p-3 ms-lg-5">
                     <h1 style="font-weight: 700;">Dedicated to </h1>
                     <h1 style="font-weight: 700;"> Quality and results</h1>
                     <p style="font-weight: 600;">At Chennai Chappals, we believe that footwear is more than just a
@@ -836,7 +820,7 @@
                         crafted from premium materials, ensuring not only unparalleled durability but also exceptional
                         comfort and style. Our commitment to quality means that whether you're navigating the bustling
                         city streets or exploring new horizons, you can trust our chappals to stand the test of time.
-                    <div class="d-none d-lg-block d-md-block">
+                    <div class="d-none d-lg-block d-md-none">
                         <p style="font-weight: 600;">Experience the perfect fusion of timeless craftsmanship and modern
                             elegance with every step you take. Our chappals are designed to be your reliable partner,
                             offering support and sophistication from sunrise to sunset. Embrace the journey with
@@ -845,7 +829,6 @@
 
                     </p>
                 </div>
-                <div class="col"></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -941,10 +924,10 @@
                     </div>
                     <div class="col-12 col-lg-4 col-md-5">
                         <form class="main_form" id="myForm">
-                            <div class="row m-2">
-                                <textarea placeholder="Type here" style="width: 100%; height: 100px; border: none;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" id="message"></textarea>
+                            <div class="row m-2 justify-content-center">
+                                <textarea placeholder="Type here" style="width: 95%; height: 150px; border: none;box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" id="message"></textarea>
                                 <div class="text-center">
-                                    <button type="submit" style="background-image: linear-gradient(to right top, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);border: none;"class="text-center text-light px-4 py-1 mt-2 rounded"><b>Submit</b> </button>
+                                    <button type="submit" class="my-3 p-2 text-light rounded" style="background-image: linear-gradient(to right top, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);border: none;"class="text-center text-light px-4 py-1 mt-2 rounded"><b>Submit</b> </button>
                                 </div>
                             </div>
                         </form>
