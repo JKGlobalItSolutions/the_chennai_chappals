@@ -106,33 +106,75 @@
                             /* Adjust padding for button */
                         }
                     </style>
-                    <form style="height: 100%; line-height: 50px;" class="gradient-border p-4 rounded my-4 my-lg-0">
-                        <h2 style="background: linear-gradient(to right, #7B4397 100%, #DC2430 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;" class="fw-bold">Contact Us</h2>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="email" class="form-control" id="name" placeholder="Enter your Email Address">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleTextarea" class="form-label"> Comment </label>
-                            <textarea style="outline: none;" placeholder="Comment here" class="form-control"
-                                id="exampleTextarea" rows="4"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button
-                                style="background: linear-gradient(to right top, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);"
-                                type="submit" class="btn text-light  ">Submit</button>
-                        </div>
-                    </form>
+            <form id="contact-form" style="height: 100%; line-height: 50px;" class="gradient-border p-4 rounded my-4 my-lg-0">
+                <h2 style="background: linear-gradient(to right, #7B4397 100%, #DC2430 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;" class="fw-bold">Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="form-label"> Comment </label>
+                    <textarea style="outline: none;" placeholder="Comment here" class="form-control"
+                        id="comment" rows="4"></textarea>
+                </div>
+                <div class="text-center">
+                    <button
+                        style="background: linear-gradient(to right top, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);"
+                        type="submit" class="btn text-light">Submit</button>
+                </div>
+            </form>
+            
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
+                // Initialize EmailJS with your User ID
+                emailjs.init("VGvEND5sp-v3tZ6A-");
+            
+                // Handle form submission
+                document.getElementById("contact-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+            
+                    // Collect form data
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const phone = document.getElementById("phone").value;
+                    const comment = document.getElementById("comment").value;
+            
+                    // Send email using EmailJS
+                    emailjs.send("service_jk37ps8", "template_iv8xmv4", {
+                        name: name,
+                        email: email,
+                        phone: phone,
+                        comment: comment
+                    })
+                    .then(function(response) {
+                        console.log("Email sent successfully:", response);
+                        alert("Message sent successfully via Email!");
+                    }, function(error) {
+                        console.error("Failed to send email:", error);
+                        alert("Failed to send the message via Email.");
+                    });
+            
+                    // Send WhatsApp message
+                    const whatsappMessage = `New contact form submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nComment: ${comment}`;
+                    const whatsappURL = `https://wa.me/9894924809?text=${encodeURIComponent(whatsappMessage)}`;
+            
+                    window.open(whatsappURL, "_blank");
+                });
+            </script>
+            
+                
+                    
+
 
 
 
@@ -174,7 +216,7 @@
                     GOPURA STREET, TIRUVANNAMALAI 606 601
                 </h6>
                 <img style="height: 50px;" src="./images/phone icon.png" alt="">
-            <h6 style="font-size: 20px;" class="fw-bolder text-light my-2">8124734433 </h6>
+            <h6 style="font-size: 20px;" class="fw-bolder text-light">8124734433 </h6>
             </div>
         </div>
         <style>
@@ -216,7 +258,6 @@
         </div>
         
          <!-- Map Integration end -->
-          
     </main>
     <footer>
         <!-- place footer here -->
